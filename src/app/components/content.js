@@ -9,7 +9,7 @@ const Page2 = () => {
                 <h1 className={styles.heading}>
                     We empower business with <span className={styles.highlight}>AI </span>
                 </h1>
-                <h2 className={styles.subHeading}> We use cutting-edge tools.</h2>
+                <h2 className={styles.subHeading}> We use cutting-edge Tools.</h2>
                 <p className={styles.description}>
                     Automation and <span className={styles.highlight}>streamlining tasks</span> is the core foundation of our products.
                 </p>
