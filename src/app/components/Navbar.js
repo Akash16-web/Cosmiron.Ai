@@ -43,7 +43,7 @@ const scrollToTop = () => {
             <div
               className={`${styles.dropdownMenu} ${servicesOpen ? styles.open : ''}`}
             >
-              <a className={styles.menuItem} href="#" onClick={() => setMenuOpen(false)}>AI Tools</a>
+              <a className={styles.menuItem} href="#" onClick={() => setMenuOpen(false)}>Ai Tools</a>
               <a className={styles.menuItem} href="#" onClick={() => setMenuOpen(false)}>Automation</a>
             </div>
           </div>
