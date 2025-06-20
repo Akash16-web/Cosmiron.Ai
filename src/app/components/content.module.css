@@ -1,0 +1,49 @@
+/* Hero.module.css */
+.heroContainer {
+    background: linear-gradient(to right,#8cabff,#734fc2 ); /* Gradient from purple-900 to purple-500 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0 1rem;
+    
+
+}
+
+.textContainer {
+    font-family: roboto;
+    text-align: center;
+    color: white;
+    max-width: 800px;
+}
+
+.subtitle {
+    font-size: 15px; 
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin-bottom: 0.5rem;
+    color: rgb(255, 255, 255);
+    font-weight: 200;
+}
+
+.heading {
+    font-size: 35px; 
+    font-weight: 100;
+    margin-bottom: 0.5rem;
+}
+
+.subHeading {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.description {
+    font-size: 1.2rem; /* 16px */
+    line-height: 1.5;
+}
+
+.highlight {
+    font-weight: 500;
+    color: rgb(89, 189, 255);
+}

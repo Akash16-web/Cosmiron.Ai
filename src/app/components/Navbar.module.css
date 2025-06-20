@@ -1,0 +1,229 @@
+.navbar {
+    background-color: #f3e8ff;
+    padding: 1rem 2rem;
+    border-radius: 9999px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem auto 0;
+    max-width: 1000px;
+    position: fixed;
+    top: 0.5em;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    transition: all 0.3s ease;
+  }
+  
+  .navContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  
+  .logo {
+    font-size: 25px;
+    font-weight: 100;
+    color: #2d3748;
+    margin-left: 20px;
+    cursor: pointer;
+  }
+  
+  .blueText {
+    color: #6f9dff;
+  }
+  
+  .navLinks {
+    display: flex;
+    gap: 2rem;
+    color: #4a5568;
+    align-items: center;
+  }
+  
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdownButton {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    background: none;
+    border: none;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #4a5568;
+    transition: color 0.3s ease;
+  }
+  
+  .arrow {
+    font-size: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .dropdownButton:hover {
+    color: #21a3fa;
+  }
+  
+  .dropdown:hover .dropdownButton .arrow,
+  .dropdown:focus-within .dropdownButton .arrow {
+    transform: rotate(180deg);
+  }
+  
+  .dropdownMenu {
+    position: absolute;
+    left: 0;
+    margin-top: 0.5rem;
+    width: 12rem;
+    background-color: #f3e8ff;
+    border: 1px solid #f3e8ff;
+    border-radius: 0.375rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    font-size: 17px;
+    z-index: 10;
+  }
+  
+  /* Desktop: Hover shows it */
+  .dropdown:hover .dropdownMenu,
+  .dropdown:focus-within .dropdownMenu {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .menuItem {
+    display: block;
+    padding: 13px;
+    color: #4a5568;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 17px;
+    font-family: roboto;
+  }
+  
+  .menuItem:hover {
+    color: #21a3fa;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+  
+  .startButton {
+    background-color: #6f9dff;
+    color: white;
+    padding: 15px;
+    border-radius: 9999px;
+    border: none;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .loginButton {
+    background-color: white;
+    color: #6f9dff;
+    padding: 12px;
+    border-radius: 9999px;
+    border: 1px solid #6f9dff;
+    font-size: 15px;
+    font-weight: bold;
+   
+    cursor: pointer;
+  }
+  
+  /* ✅ Hamburger Menu */
+  .menuToggle {
+    display: none;
+    font-size: 1.8rem;
+    color: #4a5568;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* ✅ Responsive Styles */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      padding: 1rem;
+      border-radius: 0.75rem;
+      top: 0;
+      margin: 0 auto;
+    }
+  
+    .navContent {
+      flex-direction: column;
+      align-items: flex-start;
+      width: 100%;
+    }
+  
+    .menuToggle {
+      display: block;
+      position: absolute;
+      top: 1.2rem;
+      right: 1.5rem;
+    }
+  
+    .navLinks,
+    .buttons {
+        overflow: hidden;
+        max-height: 0;
+        opacity: 0;
+        transition: max-height 0.4s ease, opacity 0.4s ease;
+        flex-direction: column;
+        width: 100%;
+        gap: 1rem;
+        margin-top: 0;
+    }
+  
+    .navLinks.open,
+    .buttons.open {
+      max-height: 500px; /* Adjust based on content height */
+      opacity: 1;
+      margin-top: 1rem;
+    }
+  
+    .dropdownMenu {
+        position: static;
+        width: 100%;
+        margin-top: 0;
+        border: none;
+        box-shadow: none;
+        border-radius: 0;
+        opacity: 0;
+        visibility: hidden;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease, opacity 0.3s ease, visibility 0.3s ease;
+    }
+
+    .dropdownMenu.open {
+        opacity: 1;
+        visibility: visible;
+        max-height: 200px; /* Adjust based on content */
+    }
+    
+    .dropdown:hover .dropdownMenu {
+      opacity: unset;
+      visibility: unset;
+    }
+  
+    .startButton,
+    .loginButton {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  
+
+
+

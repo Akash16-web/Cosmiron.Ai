@@ -1,0 +1,28 @@
+/* WhatsAppButton.module.css */
+
+.button {
+    position: fixed;
+    bottom: 80px; /* Adjusted to be above the chatbot */
+    right: 1rem;
+    background-color: #25d366; /* WhatsApp green */
+    color: white;
+    padding: 1rem;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    z-index: 1000;
+    transition: transform 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+  }
+  
+  .button:hover {
+    transform: scale(1.1);
+  }
+  
+  .icon {
+    font-size: 1.5rem;
+  }
+  

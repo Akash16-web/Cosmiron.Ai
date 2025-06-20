@@ -1,0 +1,138 @@
+/* components/Login.module.css */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #fff;
+  }
+  
+  .formWrapper {
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 1.5rem;
+    font-family: roboto;
+  }
+  
+  .inputWrapper {
+    margin-bottom: 1.5rem;
+  }
+  
+  .label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.845rem;
+    font-weight: 600;
+    color: #000;
+    font-family: roboto;
+  }
+  
+  .required {
+    color: #e74c3c;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    outline: none;
+  }
+  
+  .input:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+  }
+  
+  .passwordWrapper {
+    position: relative;
+  }
+  
+  .toggleIcon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #aaa;
+  }
+  
+  .loginButton,
+  .googleButton {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    text-align: center;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .loginButton {
+    background-color: #3498db;
+    color: white;
+    margin-bottom: 1rem;
+  }
+  
+  .loginButton:hover {
+    background-color: #2980b9;
+  }
+  
+  .googleButton {
+    background-color: #3498db;
+    color: white;
+  }
+  
+  .googleButton:hover {
+    background-color: #2980b9;
+  }
+  
+  .footer {
+    text-align: center;
+    margin-top: 1.5rem;
+  }
+  
+  .footerText {
+    font-size: 15px;
+    color: #555;
+    font-family: roboto;
+    font-weight: 500;
+  }
+  
+  .link {
+    color: #3498db;
+    text-decoration: none;
+    
+    
+  }
+  
+  .link:hover {
+    text-decoration: underline;
+  }
+  
+  .copyRight {
+    display: flex;
+    justify-content: right;
+    font-size: 12px;
+    color: #888;
+    margin-top: 2rem;
+    font-family: roboto;
+    font-weight: 500;
+  }
+  

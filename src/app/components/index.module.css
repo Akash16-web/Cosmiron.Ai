@@ -1,0 +1,102 @@
+.container {
+    padding: 2rem;
+    text-align: center;
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, #ffffff, #e9d6ff);
+    font-family: 'Roboto';
+}
+
+.title {
+    font-size: 3.1rem;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    color:#4a1c7e;
+}
+
+.purpleText {
+    color   :#48adff; 
+}
+
+.description {
+    font-size: 1rem;
+    color: #555;
+    max-width: 600px;
+    margin-bottom: 2rem;
+    font-weight: 300;
+}
+
+.button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    background-color:#48adff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 2rem;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #3385ff;
+}
+
+.iconGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 2rem;
+}
+
+.iconBox {
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    padding: 1rem;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.iconBox:hover {
+    transform: translateY(-5px);
+}
+
+.icon {
+    font-size: 1.8rem;
+    color: #48adff;
+    margin-bottom: 0.5rem;
+}
+   
+
+/* Responsive Font Sizes */
+@media (max-width: 768px) {
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .description {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+
+    .button {
+        width: 90%;
+        font-size: 1rem;
+    }
+
+    .iconBox {
+        padding: 1rem 0.5rem;
+    }
+}
+

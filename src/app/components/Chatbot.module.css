@@ -1,0 +1,113 @@
+/* components/Chatbot.module.css */
+
+.chatbotIcon {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    background-color: #1e40af;
+    color: white;
+    padding: 1rem;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+  
+  .chatbot {
+    position: fixed;
+    bottom: 4rem;
+    right: 1rem;
+    width: 100%;
+    max-width: 400px;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .chatHeader {
+    padding: 1rem;
+    border-bottom: 1px solid #e5e7eb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .chatHeader h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1f2937;
+  }
+  
+  .chatHeader button {
+    background: none;
+    border: none;
+    color: #4b5563;
+    cursor: pointer;
+  }
+  
+  .chatWindow {
+    padding: 1rem;
+    height: 300px;
+    overflow-y: auto;
+  }
+  
+  .message {
+    margin-bottom: 1rem;
+    display: flex;
+  }
+  
+  .userMessage {
+    justify-content: flex-end;
+  }
+  
+  .botMessage {
+    justify-content: flex-start;
+  }
+  
+  .message div {
+    max-width: 75%;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+  }
+  
+  .userMessage div {
+    background-color: #1e40af;
+    color: white;
+  }
+  
+  .botMessage div {
+    background-color: #f3f4f6;
+    color: #1f2937;
+  }
+  
+  .sender {
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+  }
+  
+  .chatForm {
+    padding: 1rem;
+    border-top: 1px solid #e5e7eb;
+  }
+  
+  .chatForm input {
+    width: 80%;
+    padding: 0.75rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.375rem;
+    margin-right: 0.5rem;
+  }
+  
+  .chatForm button {
+    background-color: #1e40af;
+    color: white;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 0.375rem;
+    cursor: pointer;
+  }
+  
+  .chatForm button:hover {
+    background-color: #2563eb;
+  }
+  
